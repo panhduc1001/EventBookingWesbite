@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booked events</title>
+		<link rel="stylesheet" href="./css/booked.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body style="background-color: #f2f2f2">
+		<header>
+			<!-- Navbar -->
+			<nav
+				class="navbar navbar-expand-lg navbar-light"
+				style="background-color: tomato"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">ENGINE LOVERS</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<i class="fas fa-home"></i>
+								<a class="nav-link" aria-current="page" href="index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<i class="fab fa-elementor"></i>
+								<a class="nav-link" href="./events.html">Events</a>
+							</li>
+							<li class="nav-item">
+								<i class="fas fa-plus"></i>
+								<a class="nav-link" href="./create.html">Create an event</a>
+							</li>
+							<li class="nav-item">
+								<i class="fas fa-check"></i>
+								<a class="nav-link" href="#">Booked events</a>
+							</li>
+							<li class="nav-item">
+								<i class="fas fa-heart"></i>
+								<a class="nav-link" href="#">Likes</a>
+							</li>
+
+							<!-- Dropdown in "User" -->
+							<li class="nav-item dropdown">
+								<i class="fas fa-user"></i>
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdownMenuLink"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>User</a
+								>
+								<ul
+									class="dropdown-menu dropdown-menu-end"
+									aria-labelledby="navbarDropdownMenuLink"
+								>
+									<li>
+										<a class="dropdown-item" href="#">Update information </a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Settings</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Log out</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<main>
+			<div class="container">
+				<!-- Title -->
+				<div class="heading">
+					<h1>Browse your booking history</h1>
+					<h4>Your booking orders</h4>
+				</div>
+
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<!-- ID1 -->
+					<div class="accordion-item" style="margin-bottom: 5%">
+						<h2 class="accordion-header" id="flush-headingOne">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+								style="font-size: 25px"
+							>
+								ID: 876152312
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingOne"
+						>
+							<div class="accordion-body">
+								<h4>
+									<a href="./parisms.html" class="id_title_success"
+										>Paris Motor Show (Available)</a
+									>
+								</h4>
+								<p class="id_detail">1. Date: Sunday, June 20, 2021</p>
+								<p class="id_detail">2. Time: 9:00 AM</p>
+								<p class="id_detail">3. Method: Offline</p>
+								<p class="id_detail">4. Tickets: 2</p>
+								<p class="id_detail">5. Total: €40.00</p>
+								<p class="id_status_success">
+									<b>STATUS:</b> Booked (Sunday, June 13, 2021)
+								</p>
+								<p class="id_status_success"></p>
+							</div>
+							<div class="accordion-img">
+								<img src="./imgs/paris.jpeg" class="img-fluid" alt="PMS" />
+							</div>
+						</div>
+					</div>
+
+					<!-- ID2 -->
+					<div class="accordion-item" style="margin-bottom: 5%">
+						<h2 class="accordion-header" id="flush-headingTwo">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo"
+								style="font-size: 25px"
+							>
+								ID: 728375432
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingTwo"
+						>
+							<div class="accordion-body">
+								<h4>
+									<a class="id_title_warning">Munich Motor Show (Upcoming)</a>
+								</h4>
+								<p class="id_detail">1. Date: Saturday, July 10, 2021</p>
+								<p class="id_detail">2. Time: 6:00 PM</p>
+								<p class="id_detail">3. Method: Online</p>
+								<p class="id_detail">4. Tickets: 4</p>
+								<p class="id_detail">5. Total: €120.00</p>
+								<p class="id_status_warning">
+									<b>STATUS:</b> Preordered (Tuesday, June 22, 2021)
+								</p>
+							</div>
+							<div class="accordion-img">
+								<img src="./imgs/munich.jpeg" class="img-fluid" alt="PMS" />
+							</div>
+						</div>
+					</div>
+
+					<!-- ID3 -->
+					<div class="accordion-item" style="margin-bottom: 5%">
+						<h2 class="accordion-header" id="flush-headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+								style="font-size: 25px"
+							>
+								ID: 127865120
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingThree"
+						>
+							<div class="accordion-body">
+								<h4>
+									<a class="id_title_warning"
+										>Frankfurt Motor Show (Upcoming)</a
+									>
+								</h4>
+								<p class="id_detail">1. Date: Sunday, August 18, 2021</p>
+								<p class="id_detail">2. Time: 2:00 PM</p>
+								<p class="id_detail">3. Method: Offline</p>
+								<p class="id_detail">4. Tickets: 3</p>
+								<p class="id_detail">5. Total: €75.00</p>
+								<p class="id_status_warning">
+									<b>STATUS:</b> Preordered (Friday, June 25, 2021)
+								</p>
+							</div>
+							<div class="accordion-img">
+								<img src="./imgs/frankfurt.jpeg" class="img-fluid" alt="PMS" />
+							</div>
+						</div>
+					</div>
+
+					<!-- ID4 -->
+					<div class="accordion-item" style="margin-bottom: 5%">
+						<h2 class="accordion-header" id="flush-headingFour">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour"
+								aria-expanded="false"
+								aria-controls="flush-collapseFour"
+								style="font-size: 25px"
+							>
+								ID: 023745812
+							</button>
+						</h2>
+						<div
+							id="flush-collapseFour"
+							class="accordion-collapse collapse"
+							aria-labelledby="flush-headingFour"
+						>
+							<div class="accordion-body">
+								<h4>
+									<a class="id_title_danger">Detroit Motor Show (Cancelled)</a>
+								</h4>
+								<p class="id_detail">1. Date: Sunday, September 1, 2021</p>
+								<p class="id_detail">2. Time: 3:00 PM</p>
+								<p class="id_detail">3. Method: Online</p>
+								<p class="id_detail">4. Tickets: 3</p>
+								<p class="id_detail">5. Total: $90.00</p>
+								<p class="id_status_danger">
+									<b>STATUS:</b> Cancelled (Sunday, June 20, 2021)
+								</p>
+							</div>
+							<div class="accordion-img">
+								<img src="./imgs/detroit.webp" class="img-fluid" alt="PMS" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer  -->
+		<footer class="text-center text-lg-start">
+			<section class="">
+				<div class="container text-center text-md-start mt-5">
+					<div class="row xs-3">
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold mb-4" id="label-footer">
+								<i class="footer-headers">Engine Lovers</i>
+							</h6>
+						</div>
+
+						<!-- Footer links -->
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i class="footer-headers">Useful links</i>
+							</h6>
+
+							<p>
+								<i class="fab fa-elementor"></i>
+								<a href="./events.html" class="text-reset">Events</a>
+							</p>
+							<p>
+								<i class="fas fa-plus"></i>
+								<a href="./create.html" class="text-reset">Create an event</a>
+							</p>
+							<p>
+								<i class="fas fa-check"></i>
+								<a href="./booked.html" class="text-reset">Booked events</a>
+							</p>
+							<p>
+								<i class="fas fa-heart"></i>
+								<a class="text-reset">Likes</a>
+							</p>
+						</div>
+
+						<!-- Footer info -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i class="footer-headers">Contact us</i>
+							</h6>
+
+							<p class="contact-info">Brisbane QLD4000, Australia</p>
+							<p class="contact-info">info@example.com</p>
+							<p class="contact-info">+ 01 234 567 88</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div
+				class="text-center p-4"
+				style="background-color: rgba(0, 0, 0, 0.05)"
+			>
+				© 2021 Copyright: ENGINE LOVERS
+			</div>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

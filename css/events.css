@@ -1,0 +1,234 @@
+/* Navbar */
+.container-fluid .navbar-brand {
+  color: black;
+  font-family: "Abel", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin: 0 0 0 auto;
+}
+
+.collapse.navbar-collapse .navbar-nav .nav-item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.container-fluid a {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.nav-item .nav-link {
+  display: inline-block;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+.dropdown-menu.dropdown-menu-end li .dropdown-item {
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.fas.fa-home,
+.fab.fa-elementor,
+.fas.fa-plus,
+.fas.fa-check,
+.fas.fa-heart,
+.fas.fa-user,
+.nav-link.dropdown-toggle {
+  display: inline-block;
+}
+/* Navbar */
+
+/* Main */
+.container-fluid .heading {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid .heading h1 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-fluid .heading h4 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+}
+
+.container-fluid .card {
+  margin-top: 5%;
+}
+
+.card {
+  margin-top: 5%;
+  height: 480px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.card-body .card-img-top {
+  height: 180px;
+}
+
+.card-body h5 {
+  font-size: 25px;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.card-body p {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  margin: 0.3rem;
+
+}
+
+#card-body-success:hover {
+  box-shadow: green 0 5px 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#card-body-danger:hover {
+  box-shadow: tomato 0 5px 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#card-body-warning:hover {
+  box-shadow: gold 0 5px 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#card-body-secondary:hover {
+  box-shadow: grey 0 5px 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#card-header-success {
+  color: green;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+#card-header-warning {
+  color: gold;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+#card-header-danger {
+  color: tomato;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+#card-header-secondary {
+  color: grey;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn.btn-outline-success {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn.btn-outline-danger {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn.btn-outline-warning {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn.btn-outline-secondary {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .d-flex.justify-content-around {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
+
+/* Main */
+
+/* Footer */
+footer {
+  margin-top: 10%;
+  background-color: tomato;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.row.xs-3 div {
+  margin-top: 5%;
+}
+
+.row.xs-3 p {
+  margin: 0;
+}
+
+.footer-headers {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4 p {
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.text-reset {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+/* Footer */

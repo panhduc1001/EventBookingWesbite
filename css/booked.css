@@ -1,0 +1,179 @@
+/* Navbar */
+.container-fluid .navbar-brand {
+  color: black;
+  font-family: "Abel", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin: 0 0 0 auto;
+}
+
+.collapse.navbar-collapse .navbar-nav .nav-item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.container-fluid a {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.nav-item .nav-link {
+  display: inline-block;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+.dropdown-menu.dropdown-menu-end li .dropdown-item {
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.fas.fa-home,
+.fab.fa-elementor,
+.fas.fa-plus,
+.fas.fa-check,
+.fas.fa-heart,
+.fas.fa-user,
+.nav-link.dropdown-toggle {
+  display: inline-block;
+}
+/* Navbar */
+
+/* Main */
+.container .heading {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .heading h1 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .heading h4 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+}
+
+.accordion.accordion-flush {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  font-family: "Abel", sans-serif;
+}
+
+.accordion-body, .accordion-img {
+  display: inline-block;
+}
+
+.accordion-item .accordion-button.collapsed {
+  font-size: 15px;
+}
+
+.id_title_success:hover {
+  color: darkgreen;
+}
+
+.accordion-body .id_title_success {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+
+.accordion-body .id_title_warning {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: gold;
+}
+
+.accordion-body .id_title_danger {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: tomato;
+}
+
+.accordion-body .id_status_success {
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: bold;
+  color: green;
+}
+
+.accordion-body .id_status_warning {
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: bold;
+  color: gold;
+}
+
+.accordion-body .id_status_danger {
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: bold;
+  color: tomato;
+}
+
+.accordion-body .id_detail {
+  font-size: 20px;
+  margin: 0.3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .accordion-collapse.collapse {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  
+}
+/* Main */
+
+/* Footer */
+footer {
+  margin-top: 10%;
+  background-color: tomato;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.row.xs-3 div {
+  margin-top: 5%;
+}
+
+.row.xs-3 p {
+  margin: 0;
+}
+
+.footer-headers {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4 p {
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.text-reset {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+/* Footer */

@@ -1,0 +1,358 @@
+/* Navbar */
+.container-fluid .navbar-brand {
+  color: black;
+  font-family: "Abel", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin: 0 0 0 auto;
+}
+
+.collapse.navbar-collapse .navbar-nav .nav-item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.container-fluid a {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.nav-item .nav-link {
+  display: inline-block;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+.dropdown-menu.dropdown-menu-end li .dropdown-item {
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.fas.fa-home, .fab.fa-elementor, .fas.fa-plus, .fas.fa-check, .fas.fa-heart, .fas.fa-user, .nav-link.dropdown-toggle {
+  display: inline-block;
+}
+
+/* Navbar */
+
+/* Main */
+.container {
+  width: 100%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .bg-image {
+  background-image: url(../imgs/paris2.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-content {
+  margin-top: 5%;
+}
+
+.container-content .card-body {
+  margin-top: 3%;
+  padding: 1rem 0;
+}
+
+.container-content .card-body .card-title {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+#btn-save {
+  float: right;
+  width: 100%;
+  font-family: "Abel", sans-serif;
+}
+
+.container-content .card-body .buttons {
+  display: inline-block;
+  float: right;
+}
+
+.container-content .card-body-1 .card-text {
+  display: inline-block;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-body-1 .lh-base {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#event-status {
+  color: green;
+  font-weight: bold;
+}
+
+#event-des,
+#event-info {
+  margin-top: 5%;
+  font-family: "Abel", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card-body-1 .event-detail-1,
+.event-detail-2 {
+  display: inline-block;
+  margin-top: 3%;
+}
+
+.card-body-1 .event-detail-2 {
+  float: right;
+}
+
+#event-price {
+  color: green;
+}
+
+@media only screen and (max-width: 700px) {
+  .card-body {
+    flex-wrap: wrap;
+    text-align: center;
+    display: block;
+  }
+  
+  .card-body .buttons {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card-body-1 .event-detail {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .event-detail-1,
+  .event-detail-2 {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.event-detail .lh-base {
+  font-family: "Abel", sans-serif;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.container-content .card {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card .card-title {
+  margin-top: 5%;
+}
+
+#btn-book {
+  margin-top: 5%;
+  width: 100%;
+  font-family: "Abel", sans-serif;
+}
+
+.modal.fade .modal-title {
+  font-family: "Abel", sans-serif;
+}
+
+form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.elem-group {
+  margin-top: 5%;
+}
+
+div.elem-group.inlined {
+  width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+label {
+  font-family: "Abel", sans-serif;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input,
+select,
+textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+.addtxt {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 15px;
+  width: 350px;
+  background-color: #e5e8ed;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.form-control:focus {
+  color: #000;
+}
+
+.second.py-2.px-2 {
+  width: 90%;
+  background-color: lightgrey;
+  border-radius: 4px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin-bottom: 3%;
+}
+
+.text1 {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  font-family: "Abel", sans-serif;
+}
+
+.text2 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 6px;
+  color: black;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+}
+
+.text3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 4px;
+  color: black;
+  font-family: "Abel", sans-serif;
+}
+
+.text3o {
+  color: #00a5f4;
+}
+
+.text4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #828386;
+}
+
+.text4i {
+  color: #00a5f4;
+}
+
+.text4o {
+  color: white;
+}
+
+.thumbup {
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.thumbupo {
+  color: #17a2b8;
+}
+
+#anyelse {
+  margin-top: 7%;
+}
+
+.form-check {
+  margin-top: 5%;
+}
+
+#btn-close, #btn-conf {
+  font-family: "Abel", sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  float: none;
+  width: 49%;
+}
+
+/* Footer */
+footer {
+  margin-top: 10%;
+  background-color: tomato;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.row.xs-3 {
+  background-color: tomato;
+}
+
+.row.xs-3 div {
+  margin-top: 5%;
+}
+
+.row.xs-3 p {
+  margin: 0;
+}
+
+.footer-headers {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4 p {
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.text-reset {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/* Footer */
+

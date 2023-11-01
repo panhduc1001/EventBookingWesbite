@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Paris Motor Show</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/parisms.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body style="background-color: #f2f2f2">
+		<header>
+			<!-- Navbar -->
+			<nav
+				class="navbar navbar-expand-lg navbar-light"
+				style="background-color: tomato"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">ENGINE LOVERS</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<i class="fas fa-home"></i>
+								<a class="nav-link" aria-current="page" href="index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<i class="fab fa-elementor"></i>
+								<a class="nav-link" href="./events.html">Events</a>
+							</li>
+							<li class="nav-item">
+								<i class="fas fa-plus"></i>
+								<a class="nav-link" href="./create.html">Create an event</a>
+							</li>
+							<li class="nav-item">
+								<i class="fas fa-check"></i>
+								<a class="nav-link" href="./booked.html">Booked events</a>
+							</li>
+							<li class="nav-item">
+								<i class="fas fa-heart"></i>
+								<a class="nav-link" href="#">Likes</a>
+							</li>
+
+							<!-- Dropdown in "User" -->
+							<li class="nav-item dropdown">
+								<i class="fas fa-user"></i>
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdownMenuLink"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									>User</a
+								>
+								<ul
+									class="dropdown-menu dropdown-menu-end"
+									aria-labelledby="navbarDropdownMenuLink"
+								>
+									<li>
+										<a class="dropdown-item" href="#">Update information</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Settings</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Log out</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<main>
+			<div class="container">
+				<!-- Event image -->
+				<div class="bg-image"></div>
+
+				<!-- Event title -->
+				<div class="container-content">
+					<div class="card-body">
+						<h1 class="card-title">Paris Motor Show</h1>
+						<div class="buttons">
+							<button type="button" class="btn btn-warning" id="btn-save">
+								Like
+							</button>
+							<button
+								type="button"
+								class="btn btn-success"
+								data-bs-toggle="modal"
+								data-bs-target="#staticBackdrop"
+								id="btn-book"
+							>
+								Book it!
+							</button>
+						</div>
+						<div class="card-body-1">
+							<p class="card-text">By The Automobile Club of France</p>
+							<br />
+							<p class="card-text">109214 followers</p>
+							<br />
+							<p class="card-text" id="event-status">*Now available*</p>
+							<p class="lh-base" id="event-des">About this event</p>
+							<p class="lh-base">
+								Every 2 years, the Parc des Expositions de la Porte de
+								Versailles welcomes the Paris Motor Show – an international
+								event dedicated to the world of cars. This year, it is
+								celebrating its 120th anniversary. The Motor Show is the trade
+								show that draws the largest attendance in France, and
+								enthusiasts from all around the world. Programme line-up: a
+								showcase for some 200 brands of car manufacturers, the latest
+								prototypes from major vehicle brands, special events relating to
+								the car industry and much more.
+							</p>
+
+							<div class="event-detail">
+								<div class="event-detail-1">
+									<p class="lh-base" id="event-info">Date and Time</p>
+									<p class="lh-base">
+										Sunday, June 22, 2021 & Sunday, June 29, 2021
+									</p>
+									<p class="lh-base">10:00 AM - 6:00PM (GMT+2)</p>
+								</div>
+
+								<div class="event-detail-2">
+									<p class="lh-base" id="event-info">Location</p>
+									<p class="lh-base">
+										The Parc des Expositions de la Porte de Versailles
+									</p>
+									<p class="lh-base">Paris, France</p>
+								</div>
+							</div>
+
+							<p class="lh-base" id="event-des">Price</p>
+							<p class="lh-base" id="event-price">€20.00</p>
+
+							<p class="lh-base" id="event-des">Comments about this event</p>
+							<div
+								class="container justify-content-center mt-5 border-left border-right"
+							>
+								<div class="d-flex justify-content-center pt-3 pb-2">
+									<input
+										type="text"
+										name="text"
+										placeholder="+ Add a note"
+										class="form-control addtxt"
+									/>
+								</div>
+
+								<div class="d-flex justify-content-center py-2">
+									<div class="second py-2 px-2">
+										<span class="text1"
+											>Type your note, and hit enter to add it</span
+										>
+										<div class="d-flex justify-content-between py-1 pt-2">
+											<div>
+												<img
+													src="https://i.imgur.com/AgAC1Is.jpg"
+													width="18"
+												/><span class="text2">Martha</span>
+											</div>
+											<div>
+												<span class="text3">Upvote?</span>
+												<span class="thumbup">
+													<i class="fa fa-thumbs-o-up"></i>
+												</span>
+												<span class="text4">3</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-flex justify-content-center py-2">
+									<div class="second py-2 px-2">
+										<span class="text1"
+											>Type your note, and hit enter to add it</span
+										>
+										<div class="d-flex justify-content-between py-1 pt-2">
+											<div>
+												<img src="https://i.imgur.com/tPvlEdq.jpg" width="18" />
+												<span class="text2">Curtis</span>
+											</div>
+											<div>
+												<span class="text3">Upvote?</span>
+												<span class="thumbup">
+													<i class="fa fa-thumbs-o-up"></i>
+												</span>
+												<span class="text4">3</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-flex justify-content-center py-2">
+									<div class="second py-2 px-2">
+										<span class="text1"
+											>Type your note, and hit enter to add it</span
+										>
+										<div class="d-flex justify-content-between py-1 pt-2">
+											<div>
+												<img
+													src="https://i.imgur.com/gishFbz.png"
+													width="18"
+													height="18"
+												/>
+												<span class="text2">Beth</span>
+											</div>
+											<div>
+												<span class="text3 text3o">Upvoted</span>
+												<span class="thumbup">
+													<i class="fa fa-thumbs-up thumbupo"></i>
+												</span>
+												<span class="text4 text4i">1</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-flex justify-content-center py-2 pb-3">
+									<div class="second py-2 px-2">
+										<span class="text1"
+											>Type your note, and hit enter to add it</span
+										>
+										<div class="d-flex justify-content-between py-1 pt-2">
+											<div>
+												<img src="https://i.imgur.com/tPvlEdq.jpg" width="18" />
+												<span class="text2">Curtis</span>
+											</div>
+											<div>
+												<span class="text3">Upvote?</span>
+												<span class="thumbup">
+													<i class="fa fa-thumbs-o-up"></i>
+												</span>
+												<span class="text4 text4o">1</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="staticBackdrop"
+							data-bs-backdrop="static"
+							data-bs-keyboard="false"
+							tabindex="-1"
+							aria-labelledby="staticBackdropLabel"
+							aria-hidden="true"
+						>
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h2 class="modal-title" id="staticBackdropLabel">
+											Register Form
+										</h2>
+										<button
+											type="button"
+											class="btn-close"
+											data-bs-dismiss="modal"
+											aria-label="Close"
+										></button>
+									</div>
+
+									<div class="modal-body">
+										<form action="reservation.php" method="post">
+											<div class="elem-group">
+												<label for="name">Your name</label>
+												<input
+													type="text"
+													id="name"
+													name="visitor_name"
+													placeholder="Ex. John Doe"
+													pattern="[A-Z\sa-z]{3,20}"
+													required
+												/>
+											</div>
+											<div class="elem-group">
+												<label for="email">Your e-mail</label>
+												<input
+													type="email"
+													id="email"
+													name="visitor_email"
+													placeholder="Ex. john.doe@email.com"
+													required
+												/>
+											</div>
+											<div class="elem-group">
+												<label for="phone">Your phone number</label>
+												<input
+													type="tel"
+													id="phone"
+													name="visitor_phone"
+													placeholder="Ex. 498-348-3872"
+													pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+													required
+												/>
+											</div>
+											<hr />
+											<div class="elem-group inlined">
+												<label for="adult">Number of tickets</label>
+												<input
+													type="number"
+													id="adult"
+													name="total_adults"
+													placeholder="1"
+													min="1"
+													required
+												/>
+											</div>
+
+											<div class="elem-group inlined">
+												<label for="date-selection">Select date</label>
+												<select
+													id="date-selection"
+													name="date_preference"
+													required
+												>
+													<option value="">Choose a day</option>
+													<option value="online">Sunday, June 22, 2021</option>
+													<option value="offline">Sunday, June 29, 2021</option>
+												</select>
+											</div>
+
+											<div class="elem-group inlined">
+												<label for="method-selection"
+													>Select event method</label
+												>
+												<select
+													id="method-selection"
+													name="method_preference"
+													required
+												>
+													<option value="">Choose a method</option>
+													<option value="online">Online</option>
+													<option value="offline">Offline</option>
+												</select>
+											</div>
+											<hr />
+
+											<div class="elem-group">
+												<label for="message" id="anyelse">Anything Else?</label>
+												<textarea
+													id="message"
+													name="visitor_message"
+													placeholder="Tell us anything else that might be important."
+													required
+												></textarea>
+											</div>
+											<hr />
+
+											<div class="form-check">
+												<input
+													class="form-check-input"
+													type="checkbox"
+													value=""
+													id="flexCheckIndeterminate"
+													required
+												/>
+												<label
+													class="form-check-label"
+													for="flexCheckIndeterminate"
+												>
+													I agree to the terms and condtions of Engine Lovers.
+												</label>
+											</div>
+
+											<button
+												class="btn btn-secondary"
+												data-bs-dismiss="modal"
+												id="btn-close"
+											>
+												Close
+											</button>
+											<button
+												class="btn btn-success"
+												type="submit"
+												id="btn-conf"
+											>
+												Confirm
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Footer  -->
+		<footer class="text-center text-lg-start">
+			<section class="">
+				<div class="container text-center text-md-start mt-5">
+					<div class="row xs-3">
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold mb-4" id="label-footer">
+								<i class="footer-headers">Engine Lovers</i>
+							</h6>
+						</div>
+
+						<!-- Footer links -->
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i class="footer-headers">Useful links</i>
+							</h6>
+							<p>
+								<i class="fab fa-elementor"></i>
+								<a href="./events.html" class="text-reset">Events</a>
+							</p>
+							<p>
+								<i class="fas fa-plus"></i>
+								<a href="./create.html" class="text-reset">Create an event</a>
+							</p>
+							<p>
+								<i class="fas fa-check"></i>
+								<a href="./booked.html" class="text-reset">Booked events</a>
+							</p>
+							<p>
+								<i class="fas fa-heart"></i>
+								<a class="text-reset">Likes</a>
+							</p>
+						</div>
+
+						<!-- Footer info -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i class="footer-headers">Contact us</i>
+							</h6>
+
+							<p class="contact-info">Brisbane QLD4000, Australia</p>
+							<p class="contact-info">info@example.com</p>
+							<p class="contact-info">+ 01 234 567 88</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div
+				class="text-center p-4"
+				style="background-color: rgba(0, 0, 0, 0.05)"
+			>
+				© 2021 Copyright: ENGINE LOVERS
+			</div>
+		</footer>
+
+		<script src="./js/parisms.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

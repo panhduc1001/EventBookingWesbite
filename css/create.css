@@ -1,0 +1,223 @@
+/* Navbar */
+.container-fluid .navbar-brand {
+  color: black;
+  font-family: "Abel", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  margin: 0 0 0 auto;
+}
+
+.collapse.navbar-collapse .navbar-nav .nav-item {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.container-fluid a {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.nav-item .nav-link {
+  display: inline-block;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+.dropdown-menu.dropdown-menu-end li .dropdown-item {
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+}
+
+.fas.fa-home, .fab.fa-elementor, .fas.fa-plus, .fas.fa-check, .fas.fa-heart, .fas.fa-user, .nav-link.dropdown-toggle {
+  display: inline-block;
+}
+
+/* Navbar */
+
+/* Main */
+.container .heading {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .heading h1 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .heading h4 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+}
+
+.content {
+  margin-top: 5%;
+}
+
+.content h3 {
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content h6 {
+  font-family: "Abel", sans-serif;
+  margin: 0;
+}
+
+form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.elem-group {
+  margin-top: 5%;
+}
+
+div.elem-group.inlined {
+  width: 100%;
+  display: inline-block;
+  float: left;
+}
+
+label {
+  font-family: "Abel", sans-serif;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+.content-inline {
+  height: 150px;
+  margin-top: 2%;
+}
+
+#content_inline_1,
+#content_inline_2 {
+  display: inline-block;
+  width: 47%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#content_inline_1 {
+  float: left;
+}
+
+#content_inline_2 {
+  float: right;
+}
+
+.btn-group.btn-group {
+  margin-top: 3%;
+  width: 100%;
+  font-family: "Abel", sans-serif;
+}
+
+.btn.btn-primary.segmentedButton {
+  border: blue 2px solid;
+  margin-bottom: 5%;
+}
+
+.content-section {
+  display: none;
+  font-family: "Abel", sans-serif;
+  margin-top: 3%;
+}
+
+.container p {
+  font-size: 20px;
+}
+
+input,
+select,
+textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+.mb-3 {
+  margin-top: 5%;
+}
+
+.form-check {
+  margin-top: 5%;
+}
+
+#btn-conf,
+#btn-close {
+  width: 49.5%;
+  margin-top: 5%;
+  font-family: "Abel", sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-group.btn-group {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
+/* Main */
+
+/* Footer */
+footer {
+  margin-top: 10%;
+  background-color: tomato;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.row.xs-3 {
+  background-color: tomato;
+}
+
+.row.xs-3 div {
+  margin-top: 5%;
+}
+
+.row.xs-3 p {
+  margin: 0;
+}
+
+.footer-headers {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.col-md-4.col-lg-3.col-xl-3.mx-auto.mb-md-0.mb-4 p {
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.text-reset {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/* Footer */

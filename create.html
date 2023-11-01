@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an event</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/create.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: #f2f2f2;">
+  <header>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ENGINE LOVERS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <i class="fas fa-home"></i>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <i class="fab fa-elementor"></i>
+              <a class="nav-link" href="./events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-plus"></i>
+              <a class="nav-link" href="./create.html">Create an event</a>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-check"></i>
+              <a class="nav-link" href="./booked.html">Booked events</a>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-heart"></i>
+              <a class="nav-link" href="#">Likes</a>
+            </li>
+  
+            <!-- Dropdown in "User" -->
+            <li class="nav-item dropdown">
+              <i class="fas fa-user"></i>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">User</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">Update information<a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>   
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <!-- Title -->
+      <div class="heading">
+        <h1>Event creation</h1>
+        <h4>Create and update your own event in Engine Lovers</h4>
+      </div>
+
+      <div class="content">
+        <form action="reservation.php" method="post">
+          <h3>Basic event info</h3>
+          <h6>Name your event and tell event-goers why they should come. Add details that highlight what makes it unique.</h6>
+          <div class="elem-group">
+            <label for="name">Event Title</label>
+            <input type="text" id="name" name="event_name" placeholder="Be clear and descriptive" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email">Organisation</label>
+            <input type="text" id="Organisation" name="event_org" placeholder="Tells the attendance who organizes this event" required>
+          </div>
+
+          <div class="content-inline">
+            <div class="elem-group inlined" id="content_inline_1">
+              <select id="method-selection" name="method_preference" required>
+                  <option value="">Type</option>
+                  <option value="cars">Cars</option>
+                  <option value="bikes">Motorcycles</option>
+                  <option value="trucks">Trucks</option>
+                  <option value="mil-veh">Military vehicles</option>
+                  <option value="cons-veh">Construction vehicles</option>
+                  <option value="air">Airplanes</option>
+              </select>
+            </div>
+
+            <div class="elem-group inlined" id="content_inline_2">
+              <select id="method-selection" name="method_preference" required>
+                  <option value="">Attendance</option>
+                  <option value="online">0 - 100</option>
+                  <option value="online">100 - 200</option>
+                  <option value="online">200 - 300</option>
+                  <option value="online">300 - 400</option>
+                  <option value="online">400 - 500</option>
+              </select>
+            </div>
+          </div>
+          <hr>
+
+          <h3>Location</h3>
+          <h6>Help people in the area discover your event and let attendees know where to show up.</h6>     
+          <div class="btn-group btn-group">
+            <button type="button" data-section="section1" class="btn btn-primary segmentedButton">Venue</button>
+            <button type="button" data-section="section2" class="btn btn-primary segmentedButton">Online event</button>
+            <button type="button" data-section="section3" class="btn btn-primary segmentedButton">To be announced</button>
+          </div>
+          <div class="content-section" id="section1">
+            <p>Venue location</p>
+            <input type="text" id="name" name="event_name" placeholder="Search for a venue or address" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="content-section" id="section2">
+            <p>Online events have unique event pages where you can add links to livestreams and more</p>
+          </div>
+          <hr>
+
+          <h3>Date and Time</h3>
+          <h6>Tell event-goers when your event starts and ends so they can make plans to attend.</h6>  
+          <div class="content-inline">
+            <div class="elem-group inlined" id="content_inline_1">
+              <label for="checkin-date">Check-in Date</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group inlined" id="content_inline_2">
+              <label for="checkout-date">Check-out Date</label>
+              <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+          </div>
+
+          <div class="content-inline">
+            <div class="elem-group inlined" id="content_inline_1">
+              <label for="checkin-date">Start time</label>
+              <input type="time" id="checkin-time" name="checkin" required>
+            </div>
+            <div class="elem-group inlined" id="content_inline_2">
+              <label for="checkout-date">End time</label>
+              <input type="time" id="checkout-time" name="checkout" required>
+            </div>
+          </div>
+          <hr>
+
+          <h3>Description and Image</h3>
+          <h6>Some words and an image to attract customers.</h6>  
+          <div class="mb-3">
+            <label for="formFileLg" class="form-label">Image</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+          </div>
+
+          <div class="elem-group">
+            <label for="message">Description</label>
+            <textarea id="message" name="visitor_message" placeholder="Something about this event." required></textarea>
+          </div>
+          
+          <!-- Check button -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              I agree to the terms and condtions of Engine Lovers.
+            </label>
+          </div>
+
+          <button class="btn btn-secondary" data-bs-dismiss="modal" id="btn-close">Discard</button>
+          <button class="btn btn-success"
+          type="submit" id="btn-conf">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer  -->
+  <footer class="text-center text-lg-start">
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row xs-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4" id="label-footer">
+              <i class="footer-headers">Engine Lovers</i>
+            </h6> 
+          </div>
+
+          <!-- Footer links -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="footer-headers">Useful links</i>
+            </h6>
+
+            <p>
+              <i class="fab fa-elementor"></i>
+              <a href="./events.html" class="text-reset">Events</a>
+            </p>
+            <p>
+              <i class="fas fa-plus"></i>
+              <a href="./create.html" class="text-reset">Create an event</a>
+            </p>
+            <p>
+              <i class="fas fa-check"></i>
+              <a href="./booked.html" class="text-reset">Booked events</a>
+            </p>
+            <p>
+              <i class="fas fa-heart"></i>
+              <a class="text-reset">Likes</a>
+            </p>
+          </div>
+          
+          <!-- Footer info -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="footer-headers">Contact us</i>
+            </h6>
+
+            <p class="contact-info">
+              Brisbane QLD4000, Australia
+            </p>
+            <p class="contact-info">
+              info@example.com
+            </p>
+            <p class="contact-info">
+              + 01 234 567 88
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright: ENGINE LOVERS 
+    </div>  
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./js/create.js"></script>
+</body>
+</html>
